@@ -15,6 +15,7 @@ body {
   font-size: 1.125rem;
   color: {{ site.text-col | default: "#404040" }};
   position: relative;
+  border-bottom: 1px solid {{ site.page-border-col | default: "#efff14" }};
   background-color: {{ site.page-col | default: "#FFFFFF" }};
   {% if site.page-img %}
   background-image: url({{ site.page-img | relative_url }});
@@ -64,7 +65,7 @@ hr.small {
   max-width: 6.25rem;
   margin: 1rem auto;
   border-width: 0.25rem;
-  border-color: inherit;
+  border-color: #efff14;
   border-radius: 0.1875rem;
 }
 
@@ -124,7 +125,7 @@ img {
 
 .navbar-custom {
   background-color: {{ site.navbar-col | default: "#EAEAEA" }};
-  border-bottom: 1px solid {{ site.navbar-border-col | default: "#DDDDDD" }};
+  border-bottom: 1px solid {{ site.navbar-border-col | default: "#efff14" }};
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-img %}
     background-image: url({{ site.navbar-img | relative_url }});
@@ -278,7 +279,7 @@ img {
 
   .navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item {
     padding-left: 0.625rem;
-    border: 1px solid {{ site.navbar-border-col | default: "#DDDDDD" }};
+    border: 1px solid {{ site.navbar-border-col | default: "#efff14" }};
     border-width: 0 1px 1px;
   }
 
@@ -289,7 +290,7 @@ img {
 
 @media (max-width: 1199px) {
   .navbar-custom .navbar-collapse {
-    border-top: 1px solid {{ site.navbar-border-col | default: "#DDDDDD" }};
+    border-top: 1px solid {{ site.navbar-border-col | default: "#efff14" }};
     margin: 0 -1rem;
   }
 
@@ -422,6 +423,7 @@ footer .theme-by {
 footer .footer-custom-content {
   text-align: center;
   margin-bottom: 0.9375rem;
+  border-top: 1px solid {{ site.footer-border-col | default: "#efff14" }};
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
